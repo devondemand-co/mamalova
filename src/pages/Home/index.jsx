@@ -11,7 +11,7 @@ import ArrowSVG from '../../assets/V1/Arrow.svg';
 import LogoDesktop from '../../assets/V1/logo_desktop.svg';
 import FacebookIcon from '../../assets/V1/fb.svg';
 import InstagramIcon from '../../assets/V1/insta.svg';
-import UberEattSVG from '../../assets/V1/Uber_Eats.svg';
+import UberEattSVG from '../../assets/icons/uber-eats.svg';
 import justeatSVG from '../../assets/V1/just-eat.svg';
 import deliverooSVG from '../../assets/V1/deliveroo.svg';
 import pizzaIcon from '../../assets/V1/pizza.svg';
@@ -24,7 +24,7 @@ export default function index() {
         <Container className="conteinerWrapper">
           <Grid container spacing={3} className="header">
             <Grid item md={4} xs={12} className="col-1">
-              <Link to="/menu">le Menu</Link>
+              <Link to="/menu">Le Menu</Link>
             </Grid>
             <Grid className="col-2" item md={4} xs={12}>
               <img src={LogoDesktop} alt="logo-desktop" />
@@ -49,9 +49,15 @@ export default function index() {
             <div className="btnWrap">
               <div className="buttonMainWrap">
                 <img src={pizzaIcon} alt="pizza-icon" />
-                <Button className="btnMain" variant="contained" color="primary" fullWidth>
-                  Click and Collect
-                </Button>
+                <a
+                  // target="blank"
+                  style={{ width: '100%', textDecoration: 'none' }}
+                  href="https://sioupla.it/mamma-lova/mamma-lova/a-la-carte.html?"
+                >
+                  <Button className="btnMain" variant="contained" color="primary" fullWidth>
+                    Click and Collect
+                  </Button>
+                </a>
               </div>
               <Typography className="text-1" variant="body1" align="center">
                 Ou
@@ -59,15 +65,27 @@ export default function index() {
               <Typography className="text-2" variant="subtitle1" align="center">
                 Commandez sur votre plateforme préférée :
               </Typography>
-              <Button className="btnSub" variant="contained" color="primary" fullWidth>
-                <img src={UberEattSVG} alt="uber-eat-icon" />
-              </Button>
-              <Button className="btnSub" variant="contained" color="primary" fullWidth>
-                <img src={deliverooSVG} alt="deliveroo-icon" />
-              </Button>
-              <Button className="btnSub" variant="contained" color="primary" fullWidth>
+
+              <a
+                style={{ width: '100%', textDecoration: 'none' }}
+                href="https://www.ubereats.com/fr/paris/food-delivery/mamma-lova/sowtpdNMTRqIK2GpMX2t2w"
+              >
+                <Button className="btnSub" variant="contained" color="primary" fullWidth>
+                  <img src={UberEattSVG} alt="uber-eat-icon" width="100" />
+                </Button>
+              </a>
+              <a
+                // target="blank"
+                style={{ width: '100%', textDecoration: 'none' }}
+                href="https://deliveroo.fr/fr/menu/paris/versailles-notre-dame/mamma-lova-rue-des-2-portes?geohash=u09t87j02jxw"
+              >
+                <Button className="btnSub" variant="contained" color="primary" fullWidth>
+                  <img src={deliverooSVG} alt="deliveroo-icon" />
+                </Button>
+              </a>
+              {/* <Button className="btnSub" variant="contained" color="primary" fullWidth>
                 <img src={justeatSVG} alt="just-eat-icon" />
-              </Button>
+              </Button> */}
             </div>
           </div>
           <div className="footer">

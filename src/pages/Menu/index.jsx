@@ -22,13 +22,15 @@ export default function index() {
     <>
       {/* <div className="background-image overlay"></div> */}
       <div id="menu-styles">
-        <Container className="conteinerWrapper">
+        <Container className="conteinerWrapper" maxWidth="lg">
           <Grid container spacing={3} className="header">
             <Grid item md={4} xs={12} className="col-1">
-              <Link to="/menu">le Menu</Link>
+              <Link to="/menu">Le Menu</Link>
             </Grid>
             <Grid className="col-2" item md={4} xs={12}>
-              <img src={LogoDesktop} alt="logo-desktop" />
+              <Link to="/home">
+                <img src={LogoDesktop} alt="logo-desktop" />
+              </Link>
             </Grid>
             <Grid item md={4} xs={12} className="col-3">
               <div className="colWrap">
@@ -63,9 +65,15 @@ export default function index() {
 
               <div className="buttonMainWrap">
                 <img src={pizzaIcon} alt="pizza-icon" />
-                <Button className="btnMain" variant="contained" color="primary" fullWidth>
-                  Click and Collect
-                </Button>
+                <a
+                  // target="blank"
+                  style={{ width: '100%', textDecoration: 'none' }}
+                  href="https://sioupla.it/mamma-lova/mamma-lova/a-la-carte.html?"
+                >
+                  <Button className="btnMain" variant="contained" color="primary" fullWidth>
+                    Click and Collect
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

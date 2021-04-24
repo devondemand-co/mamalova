@@ -17,6 +17,12 @@
     padding-top: 35px;
     padding-bottom: 101px;
     position: relative;
+    overflow: auto;
+
+    @include sm {
+      padding-right: 10vw;
+      padding-left: 10vw;
+    }
   }
 
   .header {

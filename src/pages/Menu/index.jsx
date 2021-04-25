@@ -16,6 +16,7 @@ import UberEattSVG from '../../assets/V1/Uber_Eats.svg';
 import justeatSVG from '../../assets/V1/just-eat.svg';
 import deliverooSVG from '../../assets/V1/deliveroo.svg';
 import pizzaIcon from '../../assets/V1/pizza.svg';
+import PDF from '../../assets/MenuFinal.pdf';
 
 import SEO from '../../components/seo';
 
@@ -31,7 +32,9 @@ export default function index() {
         <Container className="conteinerWrapper" maxWidth="lg">
           <Grid container spacing={3} className="header">
             <Grid item md={4} xs={12} className="col-1">
-              <a to="/menu">Le Menu</a>
+              <a href={PDF} download>
+                Le Menu
+              </a>{' '}
             </Grid>
             <Grid className="col-2" item md={4} xs={12}>
               <Link to="/home">
@@ -90,7 +93,7 @@ export default function index() {
               </Grid>
               <Grid item className="col-2" md={4} xs={12}>
                 <a style={{ color: 'inherit', textDecoration: 'none' }} href="tel:0130241469">
-                  013-024-1469
+                  0130241469
                 </a>
               </Grid>
               <Grid item className="col-3" md={4} xs={12}>

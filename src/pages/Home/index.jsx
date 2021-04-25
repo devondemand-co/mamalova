@@ -16,9 +16,15 @@ import justeatSVG from '../../assets/V1/just-eat.svg';
 import deliverooSVG from '../../assets/V1/deliveroo.svg';
 import pizzaIcon from '../../assets/V1/pizza.svg';
 
+import SEO from '../../components/seo';
+
 export default function index() {
   return (
     <>
+      <SEO
+        title="Mamma Lova - 7 rue des 2 portes 78000 Versailles"
+        description="Mamma Lova est une pizzeria avec une pâte faite maison à l’eau de source de 48h minimum de maturation pour un effet léger et très digeste avec des produits frais et originaux. Nous sommes situés à proximité du marché Carré Notre Dame dans une rue piétonne à Versailles. Si vous avez adoré le fromage ou la charcuterie sur nos pizzas rendez-vous dans notre épicerie avec de nombreux produits bio. Venez partager dans une ambiance chaleureuse des produits authentiques italiens et des plats faits maison."
+      />
       {/* <div className="background-image overlay"></div> */}
       <div id="home-styles">
         <Container className="conteinerWrapper">
@@ -94,7 +100,9 @@ export default function index() {
                 7 rue des 2 portes 78000 Versailles
               </Grid>
               <Grid item className="col-2" md={4} xs={12}>
-                +33 1 76 54 45 34
+                <a style={{ color: 'inherit', textDecoration: 'none' }} href="tel:0130241469">
+                  013-024-1469
+                </a>
               </Grid>
               <Grid item className="col-3" md={4} xs={12}>
                 Mar - Dim : 11h - 22h

@@ -12,11 +12,12 @@
     "node-sass": "4.14.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.4",
+    "react-seo-component": "^2.0.2",
     "web-vitals": "^1.0.1",
     "yup": "^0.32.9"
-
   },
   "scripts": {
     "start": "react-scripts start",

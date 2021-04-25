@@ -95,6 +95,9 @@
     align-items: center;
     margin-right: 6vw;
     overflow: hidden;
+    @include sm {
+      margin-top: 50px;
+    }
 
     .text-1 {
       font: normal normal 900 32px/25px Roboto;
@@ -111,6 +114,10 @@
 
     .btnWrap {
       margin-top: 10vh;
+
+      @include sm {
+        margin-top: 0vh;
+      }
       width: 594px;
 
       .btnMain {

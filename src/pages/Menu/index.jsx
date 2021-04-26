@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Typography, Divider, Button } from '@material-ui/core';
+import { Container, Grid, Typography, Button } from '@material-ui/core';
 
 import '../../styles/menuStyle.scss';
 
@@ -12,9 +12,6 @@ import ArrowSVG from '../../assets/Code Promo/Arrow.svg';
 import LogoDesktop from '../../assets/V1/logo_desktop.svg';
 import FacebookIcon from '../../assets/V1/fb.svg';
 import InstagramIcon from '../../assets/V1/insta.svg';
-import UberEattSVG from '../../assets/V1/Uber_Eats.svg';
-import justeatSVG from '../../assets/V1/just-eat.svg';
-import deliverooSVG from '../../assets/V1/deliveroo.svg';
 import pizzaIcon from '../../assets/V1/pizza.svg';
 import PDF from '../../assets/MenuFinal.pdf';
 
@@ -63,7 +60,7 @@ export default function index() {
 
           <div className="btnDiv">
             <div className="arrowdisplay">
-              <img src={ArrowSVG} />
+              <img src={ArrowSVG} alt="arrowSVG" />
             </div>
             <div className="btnWrap">
               <Typography className="text-2" variant="subtitle1" align="center">

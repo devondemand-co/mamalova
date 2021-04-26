@@ -1,10 +1,10 @@
 import React from 'react';
-import { Container, Grid, Typography, Divider, Button } from '@material-ui/core';
+import { Container, Grid, Typography, Button } from '@material-ui/core';
 
 import '../../styles/homeStyles.scss';
 
 //router
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 //icons
 import ArrowSVG from '../../assets/V1/Arrow.svg';
@@ -12,7 +12,7 @@ import LogoDesktop from '../../assets/V1/logo_desktop.svg';
 import FacebookIcon from '../../assets/V1/fb.svg';
 import InstagramIcon from '../../assets/V1/insta.svg';
 import UberEattSVG from '../../assets/icons/uber-eats.svg';
-import justeatSVG from '../../assets/V1/just-eat.svg';
+// import justeatSVG from '../../assets/V1/just-eat.svg';
 import deliverooSVG from '../../assets/V1/deliveroo.svg';
 import pizzaIcon from '../../assets/V1/pizza.svg';
 
@@ -37,7 +37,7 @@ export default function index() {
               </a>
             </Grid>
             <Grid className="col-2" item md={4} xs={12}>
-              <img src={LogoDesktop} alt="logo-desktop" />
+              <img src={LogoDesktop} alt="logoHome" />
             </Grid>
             <Grid item md={4} xs={12} className="col-3">
               <div className="colWrap">

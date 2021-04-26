@@ -45,12 +45,16 @@ export default function index() {
                 <img className="arrow" src={ArrowSVG} alt="arrow-svg" />
               </div>
               <div>
-                <Button className="buttonStyle" variant="contained" color="primary">
-                  <img src={FacebookIcon} alt="fb-icon" />
-                </Button>
-                <Button className="buttonStyle" variant="contained" color="primary">
-                  <img src={InstagramIcon} alt="insta-icon" />
-                </Button>
+                <a href="https://m.facebook.com/Mamma-Lova-Versailles-104445001769968/?tsid=0.38748269739848207&source=result">
+                  <Button className="buttonStyle" variant="contained" color="primary">
+                    <img src={FacebookIcon} alt="fb-icon" />
+                  </Button>
+                </a>
+                <a href="https://www.instagram.com/mamma.lova/">
+                  <Button className="buttonStyle" variant="contained" color="primary">
+                    <img src={InstagramIcon} alt="insta-icon" />
+                  </Button>
+                </a>
               </div>
             </Grid>
           </Grid>

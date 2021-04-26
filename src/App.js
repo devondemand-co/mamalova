@@ -17,7 +17,7 @@ function App() {
     <Router>
       <React.Suspense fallback={loading}>
         <Switch>
-          <Route exact path="/home" name="Home" component={HomeScreen} />
+          <Route exact path="/" name="Home" component={HomeScreen} />
           <Route exact path="/menu" name="Menu" component={MenuScreen} />
         </Switch>
       </React.Suspense>

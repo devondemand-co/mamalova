@@ -13,7 +13,6 @@ import LogoDesktop from '../../assets/V1/logo_desktop.svg';
 import FacebookIcon from '../../assets/V1/fb.svg';
 import InstagramIcon from '../../assets/V1/insta.svg';
 import pizzaIcon from '../../assets/V1/pizza.svg';
-import PDF from '../../assets/MenuFinal.pdf';
 
 import SEO from '../../components/seo';
 

@@ -16,7 +16,6 @@ import UberEattSVG from '../../assets/icons/uber-eats.svg';
 import deliverooSVG from '../../assets/V1/deliveroo.svg';
 import pizzaIcon from '../../assets/V1/pizza.svg';
 
-import PDF from '../../assets/MenuFinal.pdf';
 import SEO from '../../components/seo';
 
 export default function index() {

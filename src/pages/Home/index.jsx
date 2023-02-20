@@ -32,7 +32,7 @@ export default function index() {
           <Grid container spacing={3} className="header">
             <Grid item md={4} xs={12} className="col-1">
               {/* <Link to="/menu">Le Menu</Link> */}
-              <a href={PDF} download>
+              <a href='https://mammalovacarte.carrd.co/'>
                 Le Menu
               </a>
             </Grid>
